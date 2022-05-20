@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 
 import router from "../routes/router.js";
 import themeRouter from "../routes/themeRouter.js";
+import subjectRouter from "../routes/subjectRouter.js";
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(cors());
 
 app.use(router);
 app.use(themeRouter);
+app.use(subjectRouter);
 
 const PORT = process.env.PORT || 5000;
 

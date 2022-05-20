@@ -1,3 +1,33 @@
-﻿{
-  
-}
+﻿  {
+    "materiaId": "628817bc6a19319580836cd5",
+    "name": "Contando",
+    "video": "https://youtu.be/6DgVxN8mrFQ",
+    "exercicios": [
+      {
+        "name": "Números de 0 a 19",
+        "questoes": [
+          {
+            "questão": "Há 10 baleias aqui, mas precisamos de 13 baleias. Precisamos de mais __ baleias!",
+            "alternativas": [
+              {
+                "alternativa": "7",
+                "correta": false
+              },
+              {
+                "alternativa": "2",
+                "correta": false
+              },
+              {
+                "alternativa": "3",
+                "correta": true
+              },
+              {
+                "alternativa": "5",
+                "correta": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
