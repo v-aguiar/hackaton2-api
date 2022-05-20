@@ -5,6 +5,7 @@ import chalk from "chalk";
 import dotenv from "dotenv";
 
 import router from "../routes/router.js";
+import themeRouter from "../routes/themeRouter.js";
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ app.use(json());
 app.use(cors());
 
 app.use(router);
+app.use(themeRouter);
 
 const PORT = process.env.PORT || 5000;
 
