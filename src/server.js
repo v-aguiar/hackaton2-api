@@ -15,8 +15,6 @@ app.use(json());
 app.use(cors());
 
 app.use(router);
-app.use(themeRouter);
-app.use(subjectRouter);
 
 const PORT = process.env.PORT || 5000;
 
