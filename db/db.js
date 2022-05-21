@@ -4,10 +4,7 @@ import chalk from "chalk";
 
 dotenv.config();
 
-// const URL = process.env.MONGO_URL || "mongodb://localhost:27017";
-const URL =
-  process.env.MONGO_URL ||
-  "mongodb+srv://admin:gktX9wI5Gg0Dtr2e@hackaton2-api.5qyy2.mongodb.net/?retryWrites=true&w=majority";
+const URL = process.env.MONGO_URL || "mongodb://localhost:27017";
 const mongoClient = new MongoClient(URL);
 
 let db = null;
