@@ -1,4 +1,3 @@
-import { ObjectId } from "mongodb";
 import db from "../db/db.js";
 
 export async function getMaterias(req, res) {
@@ -7,7 +6,7 @@ export async function getMaterias(req, res) {
   try {
     const materias = await db
       .collection("materias")
-      .find({ materiaId: new ObjectId(id) })
+      .find({ materiaId: id })
       .toArray();
     res.status(200).json(materias);
   } catch {
