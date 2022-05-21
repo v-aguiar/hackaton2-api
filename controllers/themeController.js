@@ -2,7 +2,7 @@ import db from "../db/db.js";
 
 export async function getThemes(req, res) {
   try {
-    const themes = await db.collection("temas").find();
+    const themes = await db.collection("temas").find().toArray();
     res.status(200).json(themes);
   } catch {
     res.status(500).send("Erro ao pegar os temas");
